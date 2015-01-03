@@ -154,11 +154,14 @@
                         })
                     })
                 })
-                if (parseInt($(this).attr("data-map")) == rightAnswer[nowId]) {
+                if (parseInt($(this).attr("data-map")) == rightAnswer[nowId - 1]) {
                     score += 1
                 }
             }
             else {
+                if (parseInt($(this).attr("data-map")) == rightAnswer[nowId - 1]) {
+                    score += 1
+                }
                 $("#pinwei").attr("src", "./static/img/" + score + "-pinwei.png")
                 $("#main-content").animate({"height": "0"})
             }
