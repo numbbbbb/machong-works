@@ -20,68 +20,68 @@
     <div class="container-fluid" style="height:100%;overflow:hidden;background:url('/static/img/bg.jpg') no-repeat;background-size:100% 100%;" id="index">
         <div class="row" style="margin-top:16%;">
             <div class="col-xs-12" style="text-align:center;">
-                <img src="/static/img/index-girl.png" alt="" class="img-responsive center-block">
+                <img src="../static/img/index-girl.png" alt="" class="img-responsive center-block">
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
             <div class="col-xs-12">
-                <img src="/static/img/index-name.png" alt="" class="img-responsive center-block">
+                <img src="../static/img/index-name.png" alt="" class="img-responsive center-block">
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
             <div class="col-xs-6 col-xs-offset-3">
-                <img src="/static/img/index-btn.png" alt="" class="img-responsive center-block" id="index-btn">
+                <img src="../static/img/index-btn.png" alt="" class="img-responsive center-block" id="index-btn">
             </div>
         </div>
     </div>
     <div class="container-fluid" style="height:100%;overflow:hidden;background:url('/static/img/1-bg.jpg') no-repeat;background-size:100% 100%;" id="main-content">
         <div class="row" style="margin-top:16%;">
             <div class="col-xs-12" style="text-align:center;padding:0px;">
-                <img src="/static/img/1-question.png" alt="" class="img-responsive center-block" id="question">
+                <img src="../static/img/1-question.png" alt="" class="img-responsive center-block" id="question">
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
             <div class="col-xs-12">
-                <img src="/static/img/1-content.png" alt="" class="img-responsive center-block" id="content">
+                <img src="../static/img/1-content.png" alt="" class="img-responsive center-block" id="content">
             </div>
         </div>
         <div class="row" style="margin-top:10%;">
             <div class="col-xs-4 col-xs-offset-1">
-                <img src="/static/img/mai.png" alt="" class="img-responsive center-block" id="mai-btn" data-map="1">
+                <img src="../static/img/mai.png" alt="" class="img-responsive center-block" id="mai-btn" data-map="1">
             </div>
             <div class="col-xs-4 col-xs-offset-2">
-                <img src="/static/img/bumai.png" alt="" class="img-responsive center-block" id="bumai-btn" data-map="0">
+                <img src="../static/img/bumai.png" alt="" class="img-responsive center-block" id="bumai-btn" data-map="0">
             </div>
         </div>
     </div>
     <div class="container-fluid" style="height:100%;overflow:hidden;background:url('/static/img/1-bg.jpg') no-repeat;background-size:100% 100%;">
         <div class="row" style="margin-top:30%;">
             <div class="col-xs-12">
-                <img src="/static/img/0-pinwei.png" alt="" class="img-responsive center-block" id="pinwei">
+                <img src="../static/img/0-pinwei.png" alt="" class="img-responsive center-block" id="pinwei">
             </div>
         </div>
         <div class="row" style="margin-top:15%;">
             <div class="col-xs-8 col-xs-offset-2">
-                <img src="/static/img/again.png" alt="" class="img-responsive center-block" id="again">
+                <img src="../static/img/again.png" alt="" class="img-responsive center-block" id="again">
             </div>
         </div>
         <div class="row" style="margin-top:5%;">
             <div class="col-xs-12">
-                <img src="/static/img/jump.png" alt="" class="img-responsive center-block" id="jump">
+                <img src="../static/img/jump.png" alt="" class="img-responsive center-block" id="jump">
             </div>
         </div>
     </div>
     <p id="now-question-id" data-now="1" style="display:none;"></p>
-    <img src="/static/img/1-content.png" alt="" style="display:none;">
-    <img src="/static/img/2-content.png" alt="" style="display:none;">
-    <img src="/static/img/3-content.png" alt="" style="display:none;">
-    <img src="/static/img/4-content.png" alt="" style="display:none;">
-    <img src="/static/img/5-content.png" alt="" style="display:none;">
-    <img src="/static/img/6-content.png" alt="" style="display:none;">
-    <img src="/static/img/7-content.png" alt="" style="display:none;">
-    <img src="/static/img/8-content.png" alt="" style="display:none;">
-    <img src="/static/img/9-content.png" alt="" style="display:none;">
-    <img src="/static/img/10-content.png" alt="" style="display:none;">
+    <img src="../static/img/1-content.png" alt="" style="display:none;">
+    <img src="../static/img/2-content.png" alt="" style="display:none;">
+    <img src="../static/img/3-content.png" alt="" style="display:none;">
+    <img src="../static/img/4-content.png" alt="" style="display:none;">
+    <img src="../static/img/5-content.png" alt="" style="display:none;">
+    <img src="../static/img/6-content.png" alt="" style="display:none;">
+    <img src="../static/img/7-content.png" alt="" style="display:none;">
+    <img src="../static/img/8-content.png" alt="" style="display:none;">
+    <img src="../static/img/9-content.png" alt="" style="display:none;">
+    <img src="../static/img/10-content.png" alt="" style="display:none;">
     <script src="http://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
     <script src="../static/js/fx.js"></script>
     <script src="../static/js/fx_methods.js"></script>
@@ -128,15 +128,15 @@
                             rotateY: "90deg"
                         }, 300, "linear", function() {
                             if (nowId != 10) {
-                                $("#content").attr("src", "/static/img/" + (nowId + 1) + "-content.png").animate({
+                                $("#content").attr("src", "../static/img/" + (nowId + 1) + "-content.png").animate({
                                     rotateY: "0deg"
                                 }, 300, "linear", function() {
-                                    $("#question").attr("src", "/static/img/" + (nowId + 1) + "-question.png")
+                                    $("#question").attr("src", "../static/img/" + (nowId + 1) + "-question.png")
                                     $("#now-question-id").attr("data-now", nowId + 1)
                                 })
                             }
                             if (nowId == 10) {
-                                $("#pinwei").attr("src", "/static/img/" + score + "-pinwei.png")
+                                $("#pinwei").attr("src", "../static/img/" + score + "-pinwei.png")
                                 $("#main-content").toggle()
                             }
                         })
