@@ -179,49 +179,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-    loading('20%');
-    </script>
     <p id="now-question-id" data-now="1" style="display:none;"></p>
-    <img src="./static/img/2-content.png" alt="" style="display:none;">
-    <img src="./static/img/3-content.png" alt="" style="display:none;">
-    <img src="./static/img/4-content.png" alt="" style="display:none;">
-    <img src="./static/img/5-content.png" alt="" style="display:none;">
-    <img src="./static/img/6-content.png" alt="" style="display:none;">
-    <img src="./static/img/7-content.png" alt="" style="display:none;">
-    <img src="./static/img/8-content.png" alt="" style="display:none;">
-    <img src="./static/img/9-content.png" alt="" style="display:none;">
-    <img src="./static/img/10-content.png" alt="" style="display:none;">
-    <script type="text/javascript">
-    loading('40%');
-    </script>
-    <img src="./static/img/1-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/2-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/3-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/4-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/5-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/6-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/7-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/8-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/9-pinwei.png" alt="" style="display:none;">
-    <img src="./static/img/10-pinwei.png" alt="" style="display:none;">
-    <script type="text/javascript">
-    loading('60%');
-    </script>
-    <img src="./static/img/2-question.png" alt="" style="display:none;">
-    <img src="./static/img/3-question.png" alt="" style="display:none;">
-    <img src="./static/img/4-question.png" alt="" style="display:none;">
-    <img src="./static/img/5-question.png" alt="" style="display:none;">
-    <img src="./static/img/6-question.png" alt="" style="display:none;">
-    <img src="./static/img/7-question.png" alt="" style="display:none;">
-    <img src="./static/img/8-question.png" alt="" style="display:none;">
-    <img src="./static/img/9-question.png" alt="" style="display:none;">
-    <img src="./static/img/10-question.png" alt="" style="display:none;">
-    <img src="./static/img/mai.png" alt="" style="display:none;">
-    <img src="./static/img/bumai.png" alt="" style="display:none;">
-    <script type="text/javascript">
-    loading('90%');
-    </script>
     <script type="text/javascript">
     $(function() {
         var rightAnswer = [1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
@@ -290,8 +248,30 @@
     })
     </script>
     <script type="text/javascript">
-    alert("123");
-    loading('100%');
+    var imgUrls = ['./static/img/2-content.png', './static/img/3-content.png', './static/img/4-content.png', './static/img/5-content.png', './static/img/6-content.png', './static/img/7-content.png', './static/img/8-content.png', './static/img/9-content.png', './static/img/10-content.png', './static/img/1-pinwei.png', './static/img/2-pinwei.png', './static/img/3-pinwei.png', './static/img/4-pinwei.png', './static/img/5-pinwei.png', './static/img/6-pinwei.png', './static/img/7-pinwei.png', './static/img/8-pinwei.png', './static/img/9-pinwei.png', './static/img/10-pinwei.png', './static/img/2-question.png', './static/img/3-question.png', './static/img/4-question.png', './static/img/5-question.png', './static/img/6-question.png', './static/img/7-question.png', './static/img/8-question.png', './static/img/9-question.png', './static/img/10-question.png', './static/img/mai.png', './static/img/bumai.png']
+    $(function() {
+        var now = 40
+        loading(now + "%")
+        var loadImg = function(url, final) {
+            var img = new Image()
+            img.onload = function() {
+                if (final) {
+                    loading("100%")
+                }
+                else {
+                    loading((now + 2) + "%")
+                }
+            }
+            img.src = url;
+        }
+        for (var i = 0; i < imgUrls.length; i++) {
+            if (i == imgUrls.length - 1) {
+                loadImg(imgUrls[i], true)
+            } else {
+                loadImg(imgUrls[i])
+            }
+        }
+    });
     </script>
 </body>
 
