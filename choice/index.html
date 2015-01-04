@@ -100,180 +100,181 @@
 </head>
 
 <body style="overflow:hidden;">
-    <script type='text/javascript'>
-    function loading(percent) {
-        $('.progress span').animate({
-            width: percent
-        }, 1000, function() {
-            $(this).children().html(percent);
-            if (percent == '100%') {
-                $(this).closest(".container-fluid").remove()
-            }
-        })
-    }
-    </script>
-    <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/0-bg.png') no-repeat;background-size:100% 100%;">
-        <div class="row" style="margin-top:70%;">
-            <div class="col-xs-10 col-xs-offset-1">
-                <div class="progress"> <span class="blue" style="width:0%;"><span>0%</span></span>
+    <div style="height:100%;overflow:hidden;">
+        <script type='text/javascript'>
+        function loading(percent) {
+            $('.progress span').animate({
+                width: percent
+            }, 1000, function() {
+                $(this).children().html(percent);
+                if (percent == '100%') {
+                    $(this).closest(".container-fluid").remove()
+                }
+            })
+        }
+        </script>
+        <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/0-bg.png') no-repeat;background-size:100% 100%;">
+            <div class="row" style="margin-top:70%;">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="progress"> <span class="blue" style="width:0%;"><span>0%</span></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/1-bg.gif') no-repeat;background-size:100% 100%;" id="index">
-        <div class="row" style="margin-top:16%;">
-            <div class="col-xs-12" style="text-align:center;">
-                <img src="./static/img/index-girl.png" alt="" class="img-responsive center-block">
+        <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/1-bg.gif') no-repeat;background-size:100% 100%;" id="index">
+            <div class="row" style="margin-top:16%;">
+                <div class="col-xs-12" style="text-align:center;">
+                    <img src="./static/img/index-girl.png" alt="" class="img-responsive center-block">
+                </div>
+            </div>
+            <div class="row" style="margin-top:10%;">
+                <div class="col-xs-12">
+                    <img src="./static/img/index-name.png" alt="" class="img-responsive center-block">
+                </div>
+            </div>
+            <div class="row" style="margin-top:10%;">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <img src="./static/img/index-btn.png" alt="" class="img-responsive center-block" id="index-btn">
+                </div>
             </div>
         </div>
-        <div class="row" style="margin-top:10%;">
-            <div class="col-xs-12">
-                <img src="./static/img/index-name.png" alt="" class="img-responsive center-block">
+        <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/1-bg.jpg') no-repeat;background-size:100% 100%;" id="main-content">
+            <div class="row" style="margin-top:16%;">
+                <div class="col-xs-12" style="text-align:center;padding:0px;">
+                    <img src="./static/img/1-question.png" alt="" class="img-responsive center-block" id="question">
+                </div>
+            </div>
+            <div class="row" style="margin-top:10%;">
+                <div class="col-xs-12">
+                    <img src="./static/img/1-content.png" alt="" class="img-responsive center-block" id="content">
+                </div>
+            </div>
+            <div class="row" style="margin-top:10%;">
+                <div class="col-xs-4 col-xs-offset-1">
+                    <img src="./static/img/mai-normal.png" alt="" class="img-responsive center-block" id="mai-btn" data-map="1">
+                </div>
+                <div class="col-xs-4 col-xs-offset-2">
+                    <img src="./static/img/bumai-normal.png" alt="" class="img-responsive center-block" id="bumai-btn" data-map="0">
+                </div>
             </div>
         </div>
-        <div class="row" style="margin-top:10%;">
-            <div class="col-xs-6 col-xs-offset-3">
-                <img src="./static/img/index-btn.png" alt="" class="img-responsive center-block" id="index-btn">
+        <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/1-bg.jpg') no-repeat;background-size:100% 100%;">
+            <div class="row" style="margin-top:5%;">
+                <div class="col-xs-7 col-xs-offset-5">
+                    <img src="./static/img/share.png" alt="" class="img-responsive center-block" style="fload:right;">
+                </div>
+            </div>
+            <div class="row" style="margin-top:25%;">
+                <div class="col-xs-12">
+                    <img src="./static/img/0-pinwei.png" alt="" class="img-responsive center-block" id="pinwei">
+                </div>
+            </div>
+            <div class="row" style="margin-top:15%;">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <img src="./static/img/again.png" alt="" class="img-responsive center-block" id="again">
+                </div>
+            </div>
+            <div class="row" style="margin-top:5%;">
+                <div class="col-xs-12">
+                    <img src="./static/img/jump.png" alt="" class="img-responsive center-block" id="jump">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/1-bg.jpg') no-repeat;background-size:100% 100%;" id="main-content">
-        <div class="row" style="margin-top:16%;">
-            <div class="col-xs-12" style="text-align:center;padding:0px;">
-                <img src="./static/img/1-question.png" alt="" class="img-responsive center-block" id="question">
-            </div>
-        </div>
-        <div class="row" style="margin-top:10%;">
-            <div class="col-xs-12">
-                <img src="./static/img/1-content.png" alt="" class="img-responsive center-block" id="content">
-            </div>
-        </div>
-        <div class="row" style="margin-top:10%;">
-            <div class="col-xs-4 col-xs-offset-1">
-                <img src="./static/img/mai-normal.png" alt="" class="img-responsive center-block" id="mai-btn" data-map="1">
-            </div>
-            <div class="col-xs-4 col-xs-offset-2">
-                <img src="./static/img/bumai-normal.png" alt="" class="img-responsive center-block" id="bumai-btn" data-map="0">
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="height:100%;overflow:hidden;background:url('./static/img/1-bg.jpg') no-repeat;background-size:100% 100%;">
-        <div class="row" style="margin-top:5%;">
-            <div class="col-xs-7 col-xs-offset-5">
-                <img src="./static/img/share.png" alt="" class="img-responsive center-block" style="fload:right;">
-            </div>
-        </div>
-        <div class="row" style="margin-top:25%;">
-            <div class="col-xs-12">
-                <img src="./static/img/0-pinwei.png" alt="" class="img-responsive center-block" id="pinwei">
-            </div>
-        </div>
-        <div class="row" style="margin-top:15%;">
-            <div class="col-xs-8 col-xs-offset-2">
-                <img src="./static/img/again.png" alt="" class="img-responsive center-block" id="again">
-            </div>
-        </div>
-        <div class="row" style="margin-top:5%;">
-            <div class="col-xs-12">
-                <img src="./static/img/jump.png" alt="" class="img-responsive center-block" id="jump">
-            </div>
-        </div>
-    </div>
-    <p id="now-question-id" data-now="1" style="display:none;"></p>
-    <script type="text/javascript">
-    $(function() {
-        var rightAnswer = [1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
-        var score = 0
-        $("img").css("max-width", Math.min((($(window).height() / 600) * 100), 100) + "%")
-        $("#index-btn").tap(function() {
-            $(this).animate({
-                scale: "0.9"
-            }, 100, "ease", function() {
-                $(this).animate({
-                    scale: "1"
-                }, 100, "ease", function() {
-                    $("#index").toggle()
-                })
-            })
-        })
-        $("#jump, #again").tap(function() {
-            $(this).animate({
-                scale: "0.9"
-            }, 100, "ease", function() {
-                $(this).animate({
-                    scale: "1"
-                }, 100, "ease", function() {
-                    if ($(this).attr("id") == "again") {
-                        window.location.reload()
-                    }
-                })
-            })
-        })
-        $("#mai-btn, #bumai-btn").tap(function() {
-            var nowId = parseInt($("#now-question-id").attr("data-now"))
-            if (nowId < 10) {
-                $(this).attr("src", $(this).attr("src").split("-")[0] + ".png")
+        <p id="now-question-id" data-now="1" style="display:none;"></p>
+        <script type="text/javascript">
+        $(function() {
+            var rightAnswer = [1, 1, 0, 1, 0, 1, 0, 1, 0, 0]
+            var score = 0
+            $("img").css("max-width", Math.min((($(window).height() / 600) * 100), 100) + "%")
+            $("#index-btn").tap(function() {
                 $(this).animate({
                     scale: "0.9"
                 }, 100, "ease", function() {
                     $(this).animate({
                         scale: "1"
                     }, 100, "ease", function() {
-                        $(this).attr("src", $(this).attr("src").split(".png")[0] + "-normal.png")
-                        $("#content").animate({
-                            rotateY: "90deg"
-                        }, 300, "linear", function() {
-                            $("#content").attr("src", "./static/img/" + (nowId + 1) + "-content.png").animate({
-                                rotateY: "0deg"
+                        $("#index").toggle()
+                    })
+                })
+            })
+            $("#jump, #again").tap(function() {
+                $(this).animate({
+                    scale: "0.9"
+                }, 100, "ease", function() {
+                    $(this).animate({
+                        scale: "1"
+                    }, 100, "ease", function() {
+                        if ($(this).attr("id") == "again") {
+                            window.location.reload()
+                        }
+                    })
+                })
+            })
+            $("#mai-btn, #bumai-btn").tap(function() {
+                var nowId = parseInt($("#now-question-id").attr("data-now"))
+                if (nowId < 10) {
+                    $(this).attr("src", $(this).attr("src").split("-")[0] + ".png")
+                    $(this).animate({
+                        scale: "0.9"
+                    }, 100, "ease", function() {
+                        $(this).animate({
+                            scale: "1"
+                        }, 100, "ease", function() {
+                            $(this).attr("src", $(this).attr("src").split(".png")[0] + "-normal.png")
+                            $("#content").animate({
+                                rotateY: "90deg"
                             }, 300, "linear", function() {
-                                $("#question").attr("src", "./static/img/" + (nowId + 1) + "-question.png")
-                                $("#now-question-id").attr("data-now", nowId + 1)
+                                $("#content").attr("src", "./static/img/" + (nowId + 1) + "-content.png").animate({
+                                    rotateY: "0deg"
+                                }, 300, "linear", function() {
+                                    $("#question").attr("src", "./static/img/" + (nowId + 1) + "-question.png")
+                                    $("#now-question-id").attr("data-now", nowId + 1)
+                                })
                             })
                         })
                     })
-                })
-                if (parseInt($(this).attr("data-map")) == rightAnswer[nowId - 1]) {
-                    score += 1
+                    if (parseInt($(this).attr("data-map")) == rightAnswer[nowId - 1]) {
+                        score += 1
+                    }
+                } else {
+                    if (parseInt($(this).attr("data-map")) == rightAnswer[nowId - 1]) {
+                        score += 1
+                    }
+                    $("#pinwei").attr("src", "./static/img/" + score + "-pinwei.png")
+                    $("#main-content").animate({
+                        "height": "0"
+                    })
                 }
-            } else {
-                if (parseInt($(this).attr("data-map")) == rightAnswer[nowId - 1]) {
-                    score += 1
-                }
-                $("#pinwei").attr("src", "./static/img/" + score + "-pinwei.png")
-                $("#main-content").animate({
-                    "height": "0"
-                })
-            }
+            })
         })
-    })
-    </script>
-    <script type="text/javascript">
-    var imgUrls = ['./static/img/2-content.png', './static/img/3-content.png', './static/img/4-content.png', './static/img/5-content.png', './static/img/6-content.png', './static/img/7-content.png', './static/img/8-content.png', './static/img/9-content.png', './static/img/10-content.png', './static/img/1-pinwei.png', './static/img/2-pinwei.png', './static/img/3-pinwei.png', './static/img/4-pinwei.png', './static/img/5-pinwei.png', './static/img/6-pinwei.png', './static/img/7-pinwei.png', './static/img/8-pinwei.png', './static/img/9-pinwei.png', './static/img/10-pinwei.png', './static/img/2-question.png', './static/img/3-question.png', './static/img/4-question.png', './static/img/5-question.png', './static/img/6-question.png', './static/img/7-question.png', './static/img/8-question.png', './static/img/9-question.png', './static/img/10-question.png', './static/img/mai.png', './static/img/bumai.png']
-    $(function() {
-        var now = 40
-        loading(now + "%")
-        var loadImg = function(url, final) {
-            var img = new Image()
-            img.onload = function() {
-                if (final) {
-                    loading("100%")
+        </script>
+        <script type="text/javascript">
+        var imgUrls = ['./static/img/2-content.png', './static/img/3-content.png', './static/img/4-content.png', './static/img/5-content.png', './static/img/6-content.png', './static/img/7-content.png', './static/img/8-content.png', './static/img/9-content.png', './static/img/10-content.png', './static/img/1-pinwei.png', './static/img/2-pinwei.png', './static/img/3-pinwei.png', './static/img/4-pinwei.png', './static/img/5-pinwei.png', './static/img/6-pinwei.png', './static/img/7-pinwei.png', './static/img/8-pinwei.png', './static/img/9-pinwei.png', './static/img/10-pinwei.png', './static/img/2-question.png', './static/img/3-question.png', './static/img/4-question.png', './static/img/5-question.png', './static/img/6-question.png', './static/img/7-question.png', './static/img/8-question.png', './static/img/9-question.png', './static/img/10-question.png', './static/img/mai.png', './static/img/bumai.png']
+        $(function() {
+            var now = 40
+            loading(now + "%")
+            var loadImg = function(url, final) {
+                var img = new Image()
+                img.onload = function() {
+                    if (final) {
+                        loading("100%")
+                    } else {
+                        loading((now + 2) + "%")
+                        now += 2
+                    }
                 }
-                else {
-                    loading((now + 2) + "%")
-                    now += 2
+                img.src = url;
+            }
+            for (var i = 0; i < imgUrls.length; i++) {
+                if (i == imgUrls.length - 1) {
+                    loadImg(imgUrls[i], true)
+                } else {
+                    loadImg(imgUrls[i])
                 }
             }
-            img.src = url;
-        }
-        for (var i = 0; i < imgUrls.length; i++) {
-            if (i == imgUrls.length - 1) {
-                loadImg(imgUrls[i], true)
-            } else {
-                loadImg(imgUrls[i])
-            }
-        }
-    });
-    </script>
+        });
+        </script>
+    </div>
 </body>
 
 </html>
