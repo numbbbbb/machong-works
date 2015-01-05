@@ -105,7 +105,7 @@
         function loading(percent) {
             $('.progress span').animate({
                 width: percent
-            }, 200, function() {
+            }, 100, function() {
                 $(this).children().html(percent);
                 if (percent == '100%') {
                     $(this).closest(".container-fluid").remove()
